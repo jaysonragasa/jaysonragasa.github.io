@@ -1,6 +1,5 @@
 # JaraXamlControlExtensions
 An extension libraries for XAML controls using attached attributes.  
-[Check JaraXamlControlExtensions repo here](https://github.com/jaysonragasa/JaraXamlControlExtensions)  
   
 # FORKED
 forked from my old GitHub repo JaraIOGridControlAbstractions. I'm just moving stuff.
