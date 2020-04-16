@@ -1,3 +1,1 @@
-Monkey Home
-
-Monkey Happy
+Hey Monkey! Ah crazy crazy monkey!
