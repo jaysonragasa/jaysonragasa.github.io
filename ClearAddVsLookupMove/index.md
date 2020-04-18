@@ -18,4 +18,4 @@ This duration will be different of course based on your device. In my device, th
 ## iOS List Animation
 Here's the difference in iOS. 
 ![](https://raw.githubusercontent.com/jaysonragasa/jaraimages/master/ClearAddVsLookupMove/clearddvslookupmove_atios.gif)  
-Left emulator is "filling" the list while the right is "switching"
+Left simulator is "filling" the list whilst the right is "switching"
