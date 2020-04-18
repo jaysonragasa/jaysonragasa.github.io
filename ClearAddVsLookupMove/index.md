@@ -14,3 +14,8 @@ The ListView is bound on an `ObservableCollection<T>` and has 221 items in it. W
 * Moving took only **20 to 30 +-** millisecond. That's a huge difference in performance. Codes may be a bit longer with this one plus the look up is using `.Where`. I think it may perform even more faster if I used the traditional loop.  
   
 This duration will be different of course based on your device. In my device, the lazy load took 300+- ms and using Move took only around 60+-ms.
+
+## iOS List Animation
+Here's the difference in iOS. 
+![](https://raw.githubusercontent.com/jaysonragasa/jaraimages/master/ClearAddVsLookupMove/clearddvslookupmove_atios.gif)  
+Left emulator is "filling" the list while the right is "switching"
