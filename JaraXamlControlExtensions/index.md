@@ -6,8 +6,9 @@ An extension libraries for XAML controls using attached attributes.
   
 # FORKED
 forked from my old GitHub repo JaraIOGridControlAbstractions. I'm just moving stuff.  
-  
-**GridEx**  
+
+## Controls
+**Grid**  
 * There are 4 attached attributes where you can use for Grid and other elements. 3 of these primarily used for Grid and the other 1 is for whatever element you want to use it with.  
 * Check the screenshot above to compare both XAML which has the same output when ran.
 
