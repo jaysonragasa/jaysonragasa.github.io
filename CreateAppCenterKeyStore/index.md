@@ -75,5 +75,5 @@ KeyIdentifier [
 6. _(cont..)_ next step is to heave over to your build configuration in your AppCenter, upload this keystore then enter password, alias, and password again
 
 # To put this simply
-Watch the video below.
-
+Watch the YouTube video
+[![YouTube](https://raw.githubusercontent.com/jaysonragasa/jaraimages/master/CreateAppCenterKeyStore/2020-04-19_1618.png)](https://youtu.be/cRJNeFqrvig)
