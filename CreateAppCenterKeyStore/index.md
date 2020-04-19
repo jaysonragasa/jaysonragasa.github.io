@@ -1,10 +1,12 @@
-# Create AppCenter Keystore
+# Create AppCenter Keystore Using Keytool
 
 ![](https://raw.githubusercontent.com/jaysonragasa/jaraimages/master/CreateAppCenterKeyStore/clearddvslookupmove_atios.gif)  
   
 To be able to run the distributed application in any Android device. AppCenter requires you to upload your KeyStore to be able to sign the apk file.
 
-To do this, you must generate your personal `.keystore` file.
+To do this, you must generate your personal `.keystore` file.  
+  
+Note that you can also use the Archive Manager in Visual Studio but if you want to use the command line. _Continue reading ..._
 
 Head over to `keytool.exe` directory by using PowerShell in **Administrative mode** or you'll get Access Denied when keyool generates your keystore file.
     
