@@ -7,9 +7,9 @@ To do this, you must generate your personal `.keystore` file.
 
 Head over to `keytool.exe` directory by using PowerShell in **Administrative mode** or you'll get Access Denied when keyool generates your keystore file.
     
-1. And enter `cmd` then ↲ - The reason why we do this is to just simplify our navigation to Java folder in `Profile Files (x86)` or directly in JDK folder. 
+* And enter `cmd` then ↲ - The reason why we do this is to just simplify our navigation to Java folder in `Profile Files (x86)` or directly in JDK folder. 
   
-2. Next `cd %java_home%\bin` ↲ - if that failed, then you can try this `cd %programfiles(x86)%\Java` ↲ then `dir` ↲ and it should list the folder contents  
+* Next `cd %java_home%\bin` ↲ - if that failed, then you can try this `cd %programfiles(x86)%\Java` ↲ then `dir` ↲ and it should list the folder contents  
   
 ```
 C:\Program Files (x86)\Java>dir
@@ -28,17 +28,17 @@ C:\Program Files (x86)\Java>dir
 C:\Program Files (x86)\Java>
 ```  
   
-2. _(cont).._ `cd jdk` + then current version. i.e `cd jdk1.8.0_181` ↲ then finaly `cd bin`  
+* _(cont).._ `cd jdk` + then current version. i.e `cd jdk1.8.0_181` ↲ then finaly `cd bin`  
     
-3. Next `keytool -genkeypair -v -keystore WhateverFilenameYouWant.keystore -alias AndWhateverKeystoreAliasYouWant -keyalg RSA -keysize 2048 -validity 10000 -deststoretype PKCS12` ↲  
+* Next `keytool -genkeypair -v -keystore WhateverFilenameYouWant.keystore -alias AndWhateverKeystoreAliasYouWant -keyalg RSA -keysize 2048 -validity 10000 -deststoretype PKCS12` ↲  
     
     i.e `keytool -genkeypair -v -keystore AppCenter.keystore -alias AppCenterKeyStore -keyalg RSA -keysize 2048 -validity 10000 -deststoretype PKCS12` ↲  
   
-4. Then just answer the questions like the first screenshot above.  
+* Then just answer the questions like the first screenshot above.  
   
-5. Your keystore file will be saved in the same folder so copy that somewhere meaningful to you.  
+* Your keystore file will be saved in the same folder so copy that somewhere meaningful to you.  
   
-6. You can validate your keystore by typing `keytool -list -v -keystore WhateverFilenameYouWant.keystore -alias AndWhateverKeystoreAliasYouWant -storepass THEPASSWORDYOUSET -keypass THEPASSWORDYOUSET`  
+* You can validate your keystore by typing `keytool -list -v -keystore WhateverFilenameYouWant.keystore -alias AndWhateverKeystoreAliasYouWant -storepass THEPASSWORDYOUSET -keypass THEPASSWORDYOUSET`  
   
     i.e `keytool -list -v -keystore AppCenter.keystore -alias AppCenterKeyStore -storepass secretpass -keypass secretpass`
 
@@ -72,7 +72,7 @@ KeyIdentifier [
 ]
 ]
 ```
-6. _(cont..)_ next step is to heave over to your build configuration in your AppCenter, upload this keystore then enter password, alias, and password again
+* _(cont..)_ next step is to heave over to your build configuration in your AppCenter, upload this keystore then enter password, alias, and password again
 
 # To put this simply
 Watch the YouTube video
