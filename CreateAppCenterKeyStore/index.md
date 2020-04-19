@@ -34,7 +34,7 @@ C:\Program Files (x86)\Java>
     
     i.e `keytool -genkeypair -v -keystore AppCenter.keystore -alias AppCenterKeyStore -keyalg RSA -keysize 2048 -validity 10000 -deststoretype PKCS12` ↲  
   
-4. The just answer the questions like the first screenshot above.  
+4. Then just answer the questions like the first screenshot above.  
   
 5. Your keystore file will be saved in the same folder so copy that somewhere meaningful to you.  
   
