@@ -1,13 +1,12 @@
-# JaraXamlControlExtensions
+# Jara.Xaml.Control Extensions
 An extension libraries for XAML controls using attached attributes.  
   
-# FORKED
-forked from my old GitHub repo JaraIOGridControlAbstractions. I'm just moving stuff.
-
-# Libraries
 ![](https://raw.githubusercontent.com/jaysonragasa/jaraimages/master/JaraXamlControlExtensions/2020-04-16_1543.png)  
 ![](https://raw.githubusercontent.com/jaysonragasa/jaraimages/master/JaraXamlControlExtensions/2020-04-16_1636.png)  
-
+  
+# FORKED
+forked from my old GitHub repo JaraIOGridControlAbstractions. I'm just moving stuff.  
+  
 **GridEx**  
 * There are 4 attached attributes where you can use for Grid and other elements. 3 of these primarily used for Grid and the other 1 is for whatever element you want to use it with.  
 * Check the screenshot above to compare both XAML which has the same output when ran.
