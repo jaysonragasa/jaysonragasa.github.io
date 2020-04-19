@@ -10,6 +10,7 @@ Head over to `keytool.exe` directory by using PowerShell in **Administrative mod
 1. And enter `cmd` then ↲ - The reason why we do this is to just simplify our navigation to Java folder in `Profile Files (x86)` or directly in JDK folder. 
   
 2. Next `cd %java_home%\bin` ↲ - if that failed, then you can try this `cd %programfiles(x86)%\Java` ↲ then `dir` ↲ and it should list the folder contents  
+  
 ```
 C:\Program Files (x86)\Java>dir
  Volume in drive C is SIDE A
