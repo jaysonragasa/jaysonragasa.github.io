@@ -1,6 +1,7 @@
 # Create AppCenter Keystore
 
-![](https://raw.githubusercontent.com/jaysonragasa/jaraimages/master/CreateAppCenterKeyStore/clearddvslookupmove_atios.gif)
+![](https://raw.githubusercontent.com/jaysonragasa/jaraimages/master/CreateAppCenterKeyStore/clearddvslookupmove_atios.gif)  
+  
 To be able to run the distributed application in any Android device. AppCenter requires you to upload your KeyStore to be able to sign the apk file.
 
 To do this, you must generate your personal `.keystore` file.
