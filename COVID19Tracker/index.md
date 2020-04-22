@@ -8,7 +8,7 @@ A cross-platform #COVID19 case tracker application that works on Android and iOS
 JSON data are provided by [coronatracker.com](https://www.coronatracker.com/) which is more updated than in [John Hopkins](https://gisanddata.maps.arcgis.com/apps/opsdashboard/index.html#/bda7594740fd40299423467b48e9ecf6)
   
 **Philippines Data Source**  
-Data are proided by the [DOH](https://drive.google.com/drive/folders/10VkiUA8x7TS2jkibhSZK1gmWxFM-EoZP)
+Data are proided by the [Department of Health Philippines](https://drive.google.com/drive/folders/10VkiUA8x7TS2jkibhSZK1gmWxFM-EoZP)
 
 ## INVITATION  
 This application will not pass in Android Play Store due to their [policies](https://play.google.com/about/restricted-content/inappropriate-content/). I can only share the app via AppCenter.ms invitation. If you want the app, you can send me an email (jaysondragasa at outlook dot com) providing me your email address. This make sures that your copy is also updated everytime I release a new version.
