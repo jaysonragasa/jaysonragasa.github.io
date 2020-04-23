@@ -8,21 +8,20 @@
         <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
 
         <script>
-            $(document).ready(function(){
-  $("button").click(function(){
-    $.getJSON("https://api.coronatracker.com/v3/stats/worldometer/topCountry", function(result){
-      $.each(result, function(i, field){
-        $("div").append(field.country + " ");
-      });
-    });
-  });
-});
+            $(document).ready(function()
+            {
+              $.getJSON("https://api.coronatracker.com/v3/stats/worldometer/topCountry", function(result)
+              {
+                  $.each(result, function(i, field)
+                  {
+                    $("#countries").append(field.countryCode + " ");
+                  });
+              });
+            });
         </script>
     </head>
 
     <body>
-        <button>Get JSON data</button>
-
-        
+        <div id="countries"></div>
     </body>
 </html>
