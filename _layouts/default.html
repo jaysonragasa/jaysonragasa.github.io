@@ -18,17 +18,18 @@
   </head>
   <body>
     <script>
-      $(document).ready(function(){
-        $("button").click(function(){
-          $.getJSON("https://api.coronatracker.com/v3/stats/worldometer/topCountry", function(result){
-            $.each(result, function(i, field){
+      $(document).ready(function()
+      {
+        $.getJSON("https://api.coronatracker.com/v3/stats/worldometer/topCountry", function(result)
+        {
+            $.each(result, function(i, field)
+            {
               $("div").append(field.countryCode + " ");
             });
-          });
         });
       });
       </script>
-      
+
       <div id="header">
         <nav>
           <li class="fork"><a href="{{ site.github.owner_url }}/{{ page.dir }}">View on GitHub</a></li>
