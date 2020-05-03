@@ -1,9 +1,11 @@
 ![](https://raw.githubusercontent.com/jaysonragasa/Charmap/master/prev.gif)
   
-# Charmap
-Here's a simple Charmap written in **WPF Core 3.1**.  
+# CharmapEx
+Here's a simple **WPF Core** application called CharmapEx.
   
-There's nothing really special to it but you can load .TTF file or fron the installed fonts in your system. You can select the character you want and will show you the code where you can use it in your XAML.
+There's nothing really special to it other than you can load .TTF file or from the installed fonts in your system. You can select the character you want and will show you the code where you can use it in your XAML.
+
+![](https://raw.githubusercontent.com/jaysonragasa/Charmap/master/Annotation%202020-05-03%20083835.png)
 
 # UWP
 Well I'm trying to port this to UWP as well but .. I'm not sure it's necessary. UWP project is available when you check out the soure code. The interface is there and requires implementation that will work for UWP.
