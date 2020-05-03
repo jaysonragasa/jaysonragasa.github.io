@@ -7,6 +7,33 @@ There's nothing really special to it other than you can load .TTF file or from t
 
 ![](https://raw.githubusercontent.com/jaysonragasa/Charmap/master/Annotation%202020-05-03%20083835.png)
 
+# Resource
+You can grab your self some material icons here
+* [https://materialdesignicons.com](https://materialdesignicons.com) 
+* [https://icomoon.io/app](https://icomoon.io/app) - This is a great website where you can create a custom font based from PNG files. All you have to do is to import the black and white icon .PNG files, select what you actually need, and let the website generate the .TTF file for you.
+
+# Xamarin
+Once you got the .TTF file. All you need to do is to copy the file in your main project. Like the screenshot below.  
+  
+![](https://raw.githubusercontent.com/jaysonragasa/Charmap/master/2020-05-03_1326.png)
+  
+And set the **Build Action** to **Embedded resource**
+  
+Open the AssemblyInfo.cs and add _(i.e. We have our materialdesignicons.ttf file)_ this line
+  
+```csharp
+[assembly: ExportFont("materialdesignicons.ttf", Alias = "materialfonts")]
+```
+  
+Now you can use your custom font like so
+  
+```xml
+<Label Text=" &#xf039c; " FontFamily="materialfonts" />
+```
+This is how it looks  
+  
+![](https://raw.githubusercontent.com/jaysonragasa/Charmap/master/2020-05-03_1333.png)
+
 # UWP
 Well I'm trying to port this to UWP as well but .. I'm not sure it's necessary. UWP project is available when you check out the soure code. The interface is there and requires implementation that will work for UWP.
 ```csharp
