@@ -36,3 +36,7 @@ public class Fonty : IFonty
     }
 }
 ```
+
+# AppCenter Release
+You can download the WPF core app here  
+[https://install.appcenter.ms/users/jaysondragasa-outlook.com/apps/charmapex/distribution_groups/public](https://install.appcenter.ms/users/jaysondragasa-outlook.com/apps/charmapex/distribution_groups/public)
