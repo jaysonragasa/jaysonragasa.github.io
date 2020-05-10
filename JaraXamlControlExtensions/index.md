@@ -1,8 +1,8 @@
 # Jara.Xaml.Control Extensions
 An extension libraries for XAML controls using attached attributes.  
   
-![](https://raw.githubusercontent.com/jaysonragasa/jaraimages/master/JaraXamlControlExtensions/2020-04-16_1543.png)  
-![](https://raw.githubusercontent.com/jaysonragasa/jaraimages/master/JaraXamlControlExtensions/2020-04-16_1636.png)  
+![https://raw.githubusercontent.com/jaysonragasa/jaraimages/master/JaraXamlControlExtensions/2020-04-16_1543.png](https://raw.githubusercontent.com/jaysonragasa/jaraimages/master/JaraXamlControlExtensions/2020-04-16_1543.png)  
+![https://raw.githubusercontent.com/jaysonragasa/jaraimages/master/JaraXamlControlExtensions/2020-04-16_1636.png](https://raw.githubusercontent.com/jaysonragasa/jaraimages/master/JaraXamlControlExtensions/2020-04-16_1636.png)  
   
 # FORKED
 forked from my old GitHub repo JaraIOGridControlAbstractions. I'm just moving stuff.  
