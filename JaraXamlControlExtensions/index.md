@@ -33,11 +33,22 @@ In part of making it even more easier to create Rows and Columns. There are new 
   * `xmlns:jio="clr-namespace:Jara.Xaml.Control.Extension;assembly=Jara.Xaml.ControlExtensions.Xamarin"`
   
 **Creating rows or columns**  
-```xaml <Grid jio:GridEx.RowDefinitions="Auto,*,2*,50,Auto">`  
+```xml
+<Grid jio:GridEx.RowDefinitions="Auto,*,2*,50,Auto">
+```
+  
 or  
-`<Grid jio:GridEx.RowDefinitions="Auto * 2* 50 auto">`  
+
+```xml
+<Grid jio:GridEx.RowDefinitions="Auto * 2* 50 auto">
+```
+
 or  
-`<Grid jio:GridEx.RowDefinitions="~ * 2* 50 ~">`  
+  
+```xml
+<Grid jio:GridEx.RowDefinitions="~ * 2* 50 ~">
+```  
+
 And these values can be used in `ColumnDefinitions` or `GridDefinitions`
   
 **Creating rows AND columns**  
