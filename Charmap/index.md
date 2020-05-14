@@ -1,11 +1,11 @@
-![](https://raw.githubusercontent.com/jaysonragasa/Charmap/master/prev.gif)
+![](https://raw.githubusercontent.com/jaysonragasa/Charmap/master/ss/temp05142020-125222.gif)
   
 # CharmapEx
 Here's a simple **WPF Core** application called CharmapEx.
   
 There's nothing really special to it other than you can load .TTF file or from the installed fonts in your system. You can select the character you want and will show you the code where you can use it in your XAML.
 
-![](https://raw.githubusercontent.com/jaysonragasa/Charmap/master/Annotation%202020-05-03%20083835.png)
+![](https://raw.githubusercontent.com/jaysonragasa/Charmap/master/ss/Annotation%202020-05-14%20125631.png)
 
 # Resource
 You can grab your self some material font icons here.
