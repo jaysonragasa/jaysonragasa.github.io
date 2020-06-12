@@ -1,5 +1,3 @@
-// original source: https://drive.google.com/file/d/1X_ySTiIS6T46CPZrzc7PSOO3xW70wQe0/view
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -32,10 +30,6 @@ var count, elapsed, time, dist=0, paused=true;  // Simulation parameters
 var hist=new Array(), hl=100, analyse=false;    // Analytics
 var hues=new Array();                           // Look-up table
 
-var acceptInput = false;
-var noMenu = false;
-var canPause = true;
-
 // Default settings
 var n=7000;  // Number of particles (100 to 10,000)
 var d=10.0;  // Particle density at 100% zoom (1.0 to 10.0)
@@ -43,8 +37,12 @@ var s=0.1;  // Visible radius of particles relative to r (0.01 to 1.00)
 var o=0.8;  // Background opacity (1.0 to 0.1)
 var f=25;   // Maximum frames rate (10 to 100)
 
+var acceptInput = false;
+var noMenu = false;
+var canPause = true;
+
 // Preset values of alpha, beta and gamma
-var preset=[[180,17,0.67,n,d,s,o,15,0,'Cell-like behaviour'],
+var preset=[[180,17,0.134,n,d,s,o,15,0,'Cell-like behaviour'],
   [5,31,0.166,n,2,s,0.1,f,0,'Sprites'],
   [-23,2,0.166,n,10,s,0.6,f,0,'Donuts'],
   [114,-4,0.166,800,d,s,0.4,f,0,'Goblins'],
@@ -78,9 +76,7 @@ function initialize() {
   refresh();
   
   // Enable keyboard inputs
-  if(acceptInput) {
-	document.addEventListener('keydown',keyboard);
-  }
+  document.addEventListener('keydown',keyboard);
 }
 
 // Set values of alpha, beta and gamma
@@ -111,7 +107,7 @@ function species(abg) {
 
 // Display current settings
 function showabg() {
-  // document.getElementById("info").innerHTML='<h1>'+caption+'</h1>';
+  //document.getElementById("info").innerHTML='<h1>'+caption+'</h1>';
   let sHTML='α&thinsp;'+Math.round((a/pi)*1800)/10+'°&emsp;β&thinsp;'+Math.round((b/pi)*1800)/10+'°&emsp;γ&thinsp;'+Math.round(g*1000)/1000;
   document.getElementById("settings").innerHTML=sHTML;
 }
@@ -149,16 +145,14 @@ function playPause() {
     // Play simulation
     paused=false;
     time=new Date().getTime();
-    if(!noMenu) document.getElementById("controls").style.right='-44vh';
+    document.getElementById("controls").style.right='-44vh';
     run=setInterval(step,1000/f);
   } else {
-	if(canPause) {
-		// Pause simulation
-		paused=true;
-		elapsed+=(new Date().getTime()-time);
-		if(!noMenu) document.getElementById("controls").style.right='0';
-		window.clearTimeout(run);
-	}
+    // Pause simulation
+    paused=true;
+    elapsed+=(new Date().getTime()-time);
+    document.getElementById("controls").style.right='0';
+    window.clearTimeout(run);
   }
 }
 
@@ -502,6 +496,8 @@ function change(id,value) {
 
 // Keyboard inputs
 function keyboard() {
+  if(!acceptInput) return;
+  
   let key=event.key, code=event.keyCode, valid=true;
   if (key==' ') playPause();                                             // Space:  Play/pause
   else if (code===13) { species(); refresh(); }                          // Return: Random species
