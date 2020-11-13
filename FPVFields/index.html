@@ -3,9 +3,9 @@
 
 var disqus_config = function () {
 var urlParams = new URLSearchParams(window.location.search);
-	var geoloc = urlParams.get('geoloc');
+	var geoloc = urlParams.get('geolochash');
 	
-	this.page.url = 'https://jaysonragasa.github.io/FPVFields/index.html?geoloc=' + geoloc;
+	this.page.url = 'https://jaysonragasa.github.io/FPVFields/index.html?geolochash=' + geoloc;
 	this.page.identifier = geoloc;
 };
 
