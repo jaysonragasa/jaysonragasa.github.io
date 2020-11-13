@@ -2,10 +2,11 @@
 <script>
 
 var disqus_config = function () {
-	this.page.url = 'https://jaysonragasa.github.io/FPVFields/';
-	var urlParams = new URLSearchParams(window.location.search);
-	alert(urlParams.get('geoloc'));
-	this.page.identifier = urlParams.get('geoloc');
+var urlParams = new URLSearchParams(window.location.search);
+	var geoloc = urlParams.get('geoloc');
+	
+	this.page.url = 'https://jaysonragasa.github.io/FPVFields/index.html?geoloc=' + geoloc;
+	this.page.identifier = geoloc;
 };
 
 (function() { // DON'T EDIT BELOW THIS LINE
