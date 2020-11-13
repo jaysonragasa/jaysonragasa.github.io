@@ -3,7 +3,8 @@
 
 var disqus_config = function () {
 	this.page.url = 'https://jaysonragasa.github.io/FPVFields/';
-	this.page.identifier = 0.1;
+	var urlParams = new URLSearchParams(window.location.search);
+	this.page.identifier = urlParams.get('geoloc');
 };
 
 (function() { // DON'T EDIT BELOW THIS LINE
